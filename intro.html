@@ -8,103 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OscarSierra</title>
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: 'Comfortaa', "맑은 고딕", cursive;
-                line-height: 2;
-            }
-
-            #banner {
-                padding-top: 200px;
-                padding-bottom: 200px;
-                width: 100%;
-                text-align: center;
-                background-color: #333333;
-                color: white;
-            }
-
-            #menu {
-                width: 100%;
-                height: 100px;
-                table-layout: fixed;
-                border-collapse: collapse;
-                background-color: #444444;
-            }
-
-            #banner a, #menu a {
-                color: white;
-                text-decoration: none;
-            }
-
-            td {
-                text-align: center;
-                color: black;
-            }
-
-            .fa {
-                width: 200px;
-                text-align: center;
-            }
-
-            .fa:hover {
-                opacity: 0.7;
-            }
-
-            #footer {
-                font-size: 0.7rem;
-                padding-top: 100px;
-                padding-bottom: 20px;
-                text-align: center;
-            }
-
-            a:hover {
-                opacity: 0.7;
-            }
-
-            .box {
-                padding-bottom: 50px
-            }
-
-            li {
-                font-size: 1rem;
-                font-weight:bold;
-                padding-bottom: 10px;
-            }
-
-            .container {
-                text-align: center;
-            }
-            .content{
-                display:flex;
-            }
-            header {
-                font-size: 2rem;
-                font-weight: 600;
-                padding: 20px;
-            }
-
-            .content nav {
-                width: 30%;
-                padding: 20px;
-            }
-            nav a{
-                text-decoration:;
-                color:#666666;
-                
-            }
-
-            .content main {
-                padding: 20px;
-                width: 100%;
-            }
-        </style>
-
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -125,7 +29,7 @@
         <table id="menu">
             <tr style="font-size:1.3rem;">
                 <td>
-                    <a href="intro.html">
+                    <a href="intro.html" >
                         Introduction
                     </a>
                 </td>
@@ -136,7 +40,7 @@
                 </td>
                 <td>
                     <a href="r&i.html">
-                        Research & Internship
+                       Projects
                     </a>
                 </td>
 
@@ -148,25 +52,26 @@
             </header>
             <section class="content">
                  <nav>
-                    <ul style="list-style: none;">
-                        <li><a href="#학력">학력</a></li>
-                        <li><a href="#병역">병역</a></li>
-                        <li><a href="#약력">약력</a></li>
-                        <li><a href="#수상내역">주요 수상 내역</a></li>
+                   <ul style="list-style: none;">
+                        <li><a href="#1">학력</a></li>
+                        <li><a href="#2">병역</a></li>
+                        <li><a href="#3">약력</a></li>
+                       <li><a href="#5">Contacts</a></li>
                     </ul>
+                    
                 </nav>
                 <main>
-                    <div id="학력" class="box">
+                    <div id="1" class="box">
                         <h1>학력</h1>
                         <p> 과학영재학교 서울과학고등학교 졸업 (2016.3~2019.2)</p>
                         <p>서울대학교 기계공학부 재학 (2019.3~) </p>
                         <p> 서울대학교 항공우주공학전공 복수전공 (2021.3~)</p>
                     </div>
-                    <div id="병역" class="box">
+                    <div id="2" class="box">
                         <h1>병역</h1>
-                        <p> 대한민국 육군 KATUSA (2020.12~ 예정) </p>
+                        <p> 대한민국 육군 KATUSA (2021.12~ 예정) </p>
                     </div>
-                    <div id="약력" class="box">
+                    <div id="3" class="box">
                         <h1>약력</h1>
                         <p> 서울과학고등학교 학생회장 (2017.7~2018.7) </p>
                         <p> 대통령과학장학금 물리부문 장학생 (2019.3~)</p>
@@ -174,20 +79,15 @@
                         <p> 서울대학교 기계공학부 학생회 집행위원 (2019.11~)</p>
                         <p> 한국공학한림원 차세대공학리더 (YEHS) (2021.2~)</p>
                     </div>
-                    <div id="수상내역" class="box">
-                        <h1>주요 수상 내역</h1>
-                        <p> 기아자동차 Red Creator 3기 우수상</p>
-                        <p> 서울대학교 공과대학 제 11회 UCC공모전 우수상</p>
-                        <p> X-Corps 3기 장려상</p>
-                        <p> RnE 결과발표 우수상(물리부문) </p>
-                        <p>과제연구 최우수상(지구과학부문) 2회</p>
-                        <p> FKMO 동상 </p>
-                        <p> KPhO 은상</p>
+                    <div class="box" id="5">
+                        <h1> Contacts</h1>
+                        <p>Email : littlestein@snu.ac.kr</p>
+                        <p>H.P. 010-7164-3848</p>
                     </div>
                 </main>
             </section>
             <footer>
-                <a href="#top" style="color:black; text-decoration: underline">맨위로</a>
+                <a href="#top" style="color:black; text-decoration: underline;"> 맨위로 </a>
             </footer>
         </div>
 
