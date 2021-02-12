@@ -17,6 +17,10 @@ html {
     background-color: #333333;
     color: white;
 }
+
+#banner .name{
+    padding-bottom:20px; font-size:4rem;
+}
 .fa {
     width: 200px;
     text-align: center;
@@ -40,6 +44,7 @@ html {
 }
 
 td {
+    font-size:1.3rem;
     text-align: center;
     color: white;
 }
@@ -53,11 +58,9 @@ td:hover{
     padding-left:10%;
     padding-right:10%;
 }
-
 .content {
     display: flex;
 }
-
 header {
     font-size: 2rem;
     font-weight: 600;
@@ -109,4 +112,27 @@ nav a:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+
+/*mobile*/
+@media ( max-width: 768px ) {
+    #banner{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    #banner .name{
+        font-size:2rem;
+    }
+    td{
+        font-size:1rem;
+    }
+  .content{
+      flex-direction:column;
+    }
+    
+    .content main {
+    padding:0px;
+    width: 100%;
+}
 }
