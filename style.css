@@ -116,7 +116,7 @@ nav a:hover {
 
 
 /*mobile*/
-@media ( max-width: 768px ) {
+@media only screen and  ( max-width: 768px ) {
     #banner{
         padding-top:100px;
         padding-bottom:100px;
