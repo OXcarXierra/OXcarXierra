@@ -12,13 +12,49 @@
 
 </head>
 
+<style>
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 3;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 2;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex:1;
+      max-width: 100%;
+    }
+  }
+</style>
 <body>
     <div id="banner" onclick="location.href='main.html'">
         <div class="name"> Seungseok Oh </div>
-        <div>
-            Seoul National University<br>
-            Mechanical Engineering & Aerospace Engineering 23'
-        </div>
+        <div class="school">
+                Seoul National University<br>
+                Mechanical Engineering & Aerospace Engineering 23'
+            </div>
         <div style="padding-top:20px">
             <a href="https://www.instagram.com/_oscarsierra_/" class="fa fa-instagram" target="_blank"> _oscarsierra_</a>
             <a href="https://www.facebook.com/profile.php?id=100008532784729" class="fa fa-facebook" target="_blank"> 오승석</a>
@@ -72,7 +108,7 @@
                 </div>
                 <div class="box">
                     <p class="title"> RnE 연구 발표대회 물리부문 우수상 </p>
-                    <p class="detail">• 연세대학교 제어연구실 연구협력
+                    <p class="detail">• 연세대학교 제어공학연구실 (박진배 교수님) 연구협력
                     <br>• HUD 기반 조종 방식의 매니퓰레이터 장착 쿼드로터 개발</p>
                 </div>
                 <div class="box">
@@ -93,7 +129,7 @@
                     <br>• Solidworks 프로그램을 이용해 차량을 설계하고, 철판과 파이프를 직접 절단하고 용접하여 차량을 완성
                     <br> • 2020.1 ~ 2020.8 BAJA팀 부팀장 및 Driver
                     <br>•  2020.9~ BAJA팀 Powertrain team 팀장 
-                    <br> • <a href="https://www.snurty.net" ㅅtarget="_blank">RunToYou 홈페이지</a>
+                    <br> • <a href="https://www.snurty.net" target="_blank">RunToYou 홈페이지</a>
                     </p>
                 </div>
                 <div class="box">
@@ -107,7 +143,7 @@
                     <br> • 21학번 새내기배움터 기계공학부 소개 영상 TF</p>
                 </div>
                 <div class="box">
-                    <p class="title">서울대학교 공과대학 농구부 ENCNA No.93 (2019.9~)</p>
+                    <p class="title">서울대학교 공과대학 농구부 ENCBA No.93 (2019.9~)</p>
                     <p class="detail"></p>
                 </div>
                 <div class="box">
@@ -129,7 +165,7 @@
                        기아자동차 서포터즈 "Red Creator 3기" Team CH(2020.8~2020.11)
                    </p>
                    <p class="detail"> 
-                   • 최종 발표회 [아이디어 무비 페스티벌]에서 "Auto Sapiens"로 우수상 수상 <br>
+                   • 최종 발표회 [아이디어 무비 페스티벌]에서 "The Auto Sapiens"로 우수상 수상 <br>
                    • "코로나 19 시대, 기아자동차를 위한 제언"이라는 대주제 속에서 사람과 소통하게 될 자동차의 미래를 담아냄
                    <br> • <a href="images/video1.MP4">영상 보러가기</a>
                    </p>
@@ -160,8 +196,29 @@
                 </div>
                 
                 <h1 id="4">Designs</h1>
-                <p> too be added</p>
-
+                <div class="row">
+                    <div class="column">
+                        <img src="images/Emotion.jpg">
+                        <img src="images/emotion 원형로고.jpg">
+                        <img src="images/2021-리크루팅-포스터-진짜최종.jpg">
+                        <img src="images/채린이공연포스터_최종.jpg">
+                        <img src="images/밤은-짧아-걸어-아가씨야.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/2019-리크루팅-포스터_ev.jpg">
+                        <img src="images/2020-RTY-돕바-등판.png">
+                        <img src="images/서울대학교-RUNTOYOU-티셔츠-시안-최종.jpg">
+                        <img src="images/단풍 리크루팅 정사각형.png">
+                        <img src="images/이름이-맘에-든다는-이유만으로_가을방학.jpg">
+                    </div>
+                    <div class="column">
+                        <img src="images/futuristic buildingpng.jpg">
+                        <img src="images/movie_room_2.jpg">
+                        <img src="images/새터후드티_뒷면_기게공학전공.jpg">
+                        <img src="images/어셈블리 티셔츠 최종본.jpg">
+                        <img src="images/돕바.jpg">
+                    </div>
+                </div>
             </main>
         </section>
         <footer>
@@ -171,8 +228,8 @@
 
 
     <div id="footer">
-        This website was developed by OSS<br>
-        Special thanks to : egoing
+        Copyright ©SeungseokOh. All Rights Reserved. <br>
+            Special thanks to egoing
     </div>
 
 </body></html>
